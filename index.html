@@ -1,0 +1,139 @@
+
+<meta charset="UTF-8">
+
+
+<style>
+  @font-face {
+    font-family: 'hfx_roman';
+    src: url("media//fonts/HoeflerTxt-Roman.otf") format("opentype");
+  }
+
+  @font-face {
+    font-family: 'hfx_bold';
+    src: url("media//fonts/HoeflerTxt-Bold.otf") format("opentype");
+  }
+
+  @font-face {
+    font-family: 'hfx_black';
+    src: url("media//fonts/HoeflerTxt-Black.otf") format("opentype");
+  }
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+  .main_div {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main_logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-width: 400px;
+  }
+
+  .main_header {
+    font-family: "hfx_roman";
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3vw;
+    padding: 20%;
+  }
+
+  .sub_header {
+    font-family: "hfx_roman";
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2vw;
+    text-align: center;
+  }
+
+  .kalendar {
+    display: block;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .gallery {
+    max-width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20vw;
+    margin-top: 4vw;
+  }
+
+  .gallery_row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+
+  /* Create four equal columns that sits next to each other */
+  .gallery_column {
+    flex: 32%;
+    max-width: 32%;
+    padding: 0 4px;
+  }
+
+  .gallery_column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+
+</style>
+
+<div id="main_div" class="main_div">
+
+    <image id="main_logo" class="main_logo" src="media/logo.png"></image>
+
+    <h class="main_header"> Adaptační Kurzy & Školy v Přírodě </h>
+
+    <h2 class="sub_header"> sovivrch@gmail.com </h2>
+    <h2 class="sub_header"> +420 724 903 864 </h2>
+
+    <img class="kalendar" src="media/kalendar.png" >
+
+    <div id="gallery" class="gallery">
+
+      <div class="gallery_row">
+        <div class="gallery_column">
+          <img src="media/images/adaptak_stul.png">
+          <img src="media/images/adaptak_zebrik.png">
+          <img src="media/images/jura_orc.jpg">
+          <img src="media/images/taboriste.jpg">
+        </div>
+        <div class="gallery_column">
+          <img src="media/images/lanac.png">
+          <img src="media/images/tonda_druid.png">
+          <img src="media/images/louce.png">
+        </div>
+        <div class="gallery_column">
+          <img src="media/images/tonda_pirat.png">
+          <img src="media/images/nocni_2.png">
+          <img src="media/images/kamca_indiani.png">
+        </div>
+      </div>
+  </div>
+</div>
