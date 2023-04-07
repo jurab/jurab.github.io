@@ -35,7 +35,8 @@
   }
 
   .main_div {
-    width: 80%;
+    width: 90%;
+    padding-top: 20%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -54,6 +55,13 @@
     max-width: 17%;
   }
 
+  .current-section-logo {
+    max-width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .section-logo {
     padding: 20px;
     max-width: 600px;
@@ -64,6 +72,42 @@
 
   .section-logo:hover {
     max-width: 640px;
+  }
+
+  .section-text {
+    color: #212121;
+    background-color:#79A7B2;
+    font-family: hfx_book;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+    border-radius: 20px;
+  }
+  .section-text h1 {
+    font-size: 4.4vmin;
+    text-align: center;
+    font-family: hfx_book;
+  }
+  .section-text h3 {
+    font-size: 2.5vmin;
+    text-align: center;
+    font-family: hfx_bold;
+  }
+  .section-text h4 {
+    font-size: 2vmin;
+    text-align: center;
+    font-family: hfx_bold;
+  }
+  .section-text p {
+    text-indent: 30px;
+    font-size: 2.2vmin;
+  }
+
+  .link {
+    font-family: "hfx_bold";
+    font-size: 1.3vmin;
+    text-align: center;
   }
 
   .footer {
@@ -81,15 +125,37 @@
 
   <div id="main_div" class="main_div">
 
+    <div class="section-text">
+      <h1> Po stopách pirátského pokladu </h1>
+      <h3> Příměstský tábor 21. - 25. Srpna 2023</h3>
+      <h3> 📍 Loděnice DDM Malšovice - K Orlici 782</h3>
+
+      <br/>
+
+      <p>  Ve spolupráci s DDM Hradec Králové jsme pro vás připravili příměstský tábor pro děti 6-15 let. Program bude probíhat denně 8:00-16:30.</p>
+      <p> V ceně jsou obědy, drobné svačiny, výlety i zapůjčení lodí.</p>
+
+      <br/>
+
+
+      <h3> Cena: 2 900,- </h3>
+      <h3 class="link"> <a href="https://forms.gle/zYiLTSznLuvLHGwA6"> Přihláška zde </a></h3>
+
+      <br/>
+      <br/>
+      <br/>
+
+      <image id="menu_sovrch" class="current-section-logo" src="media/images/plain_pirati.png"></image>
+    </div>
+
     <div id="main-menu" class="main-menu">
       <a href='akce_sovrch.html'> <image id="menu_sovrch" class="section-logo" src="media/images/menu_sovrch.png"/> </a>
-      <a href='akce_pirati.html'> <image id="menu_pirati" class="section-logo" src="media/images/menu_pirati.png"/> </a>
       <a href='akce_indiani.html'> <image id="menu_indiani" class="section-logo" src="media/images/menu_indiani.png"/> </a>
       <a href='galerie.html'> <image id="menu_galerie" class="section-logo" src="media/images/menu_galerie.png"/> </a>
       <a href='team_info.html'> <image id="menu_team" class="section-logo" src="media/images/menu_team.png"/> </a>
     </div>
-  </div>
 
+  </div>
   <div class="footer"> Pro spolek <span style="font-family: bold;">Sovrch</span> spatlal léta páně 2023 <span style="font-family: bold;">Jura Brázdil</span> </div>
 
 </body>

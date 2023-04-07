@@ -1,0 +1,157 @@
+
+<meta charset="UTF-8">
+
+
+<style>
+  @font-face {
+    font-family: 'hfx_roman';
+    src: url("media//fonts/HoeflerTxt-Roman.otf") format("opentype");
+  }
+
+  @font-face {
+    font-family: 'hfx_bold';
+    src: url("media//fonts/HoeflerTxt-Bold.otf") format("opentype");
+  }
+
+  @font-face {
+    font-family: 'hfx_black';
+    src: url("media//fonts/HoeflerTxt-Black.otf") format("opentype");
+  }
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+  .main_div {
+    width: 90%;
+    padding-top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-menu {
+    padding: 10%;
+  }
+
+  .header-logo {
+    max-width: 15%;
+    position: fixed;
+    padding: 10px;
+  }
+
+  .header-logo:hover {
+    max-width: 17%;
+  }
+
+  .current-section-logo {
+    max-width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section-logo {
+    padding: 20px;
+    max-width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section-logo:hover {
+    max-width: 640px;
+  }
+
+  .section-text {
+    color: #BFBFBF;
+    background-color:#1E1613;
+    font-family: hfx_book;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+    border-radius: 20px;
+  }
+  .section-text h1 {
+    font-size: 4.4vmin;
+    text-align: center;
+    font-family: hfx_book;
+  }
+  .section-text h3 {
+    font-size: 2.5vmin;
+    text-align: center;
+    font-family: hfx_bold;
+  }
+  .section-text h4 {
+    font-size: 2vmin;
+    text-align: center;
+    font-family: hfx_bold;
+  }
+  .section-text p {
+    text-indent: 30px;
+    font-size: 2.2vmin;
+  }
+
+  .link {
+    font-family: "hfx_bold";
+    font-size: 1.3vmin;
+    text-align: center;
+  }
+
+  .footer {
+    padding-top: 0.5vmin;
+    padding-bottom: 0.5vmin;
+    text-align: center;
+  }
+
+
+</style>
+
+<body style="background-color:#E5DCCD;">
+
+  <a href='index.html'> <image class="header-logo" src="media/images/logo_round.png"></image> </a>
+
+  <div id="main_div" class="main_div">
+
+    <div class="section-text">
+      <h1> Velká podzemní loupež </h1>
+      <h3> Letní tábor </h3>
+      <h3> 1. - 8. Července 2023 </h3>
+      <h3> Tábor Domino v Hluboké u Skutče.</h3>
+
+      <p> Jistě Vás všechny zajímá kam se letos vydáme za dobrodružstvím. Tentokrát nás čekají podzemní prostory ukryté pod starobylým hradem. Síť chodeb a jeskyní které ukrývají mnoho bájných tvorů, skřetů i skřítků a hlavně drahých pokladů a artefaktů.</p>
+      <p> Naši mistři Lupiči budou mít za úkol najít co nejvíce ukrytých a dobře hlídaných starobylých artefaktů. Ale nezapomínejme, že tyto předměty hlídá strážce. A tímto strážcem není nikdo jiný než Dračice. Dračice, která hlídá svá vejce i své nastřádané bohatství. Budeš mít dost odvahy se vydat na podzemní dobrodružství se svou skupinou skřítků, trpaslíků, skřetů a hobitů? Není se čeho bát, povedou Tě zkušení druidi, válečníci, dobrodruhové a snad se k nám připojí i pirát, který tvrdí že je nejlepším lupičem. Přes všechna úskalí je to stále závod a teprve na konci se ukáže, kdo je opravdovým Mistrem všech Lupičů.</p>
+      <p> Pokud máš odvahy na rozdávání tak se s námi vydej na toto dobrodružství. Velká podzemní loupež Tě očekává!</p>
+
+      <br/>
+
+      <h3> Cena: 3 990,- </h3>
+      <h3 class="link"> <a href="https://forms.gle/k2TTQDATsb6gj5eJ9"> Přihláška zde </a></h3>
+      <h3 class="link"> <a href="https://github.com/jurab/jurab.github.io/raw/main/hra_2023.pdf"> Detailní informace </a></h3>
+
+      <image id="menu_sovrch" class="current-section-logo" src="media/images/plain_sovrch.png"></image>
+    </div>
+
+
+    <div id="main-menu" class="main-menu">
+      <a href='akce_pirati.html'> <image id="menu_pirati" class="section-logo" src="media/images/menu_pirati.png"/> </a>
+      <a href='akce_indiani.html'> <image id="menu_indiani" class="section-logo" src="media/images/menu_indiani.png"/> </a>
+      <a href='galerie.html'> <image id="menu_galerie" class="section-logo" src="media/images/menu_galerie.png"/> </a>
+      <a href='team_info.html'> <image id="menu_team" class="section-logo" src="media/images/menu_team.png"/> </a>
+    </div>
+  </div>
+  <div class="footer"> Pro spolek <span style="font-family: bold;">Sovrch</span> spatlal léta páně 2023 <span style="font-family: bold;">Jura Brázdil</span> </div>
+
+</body>

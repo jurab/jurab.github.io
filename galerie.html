@@ -40,10 +40,6 @@
     margin-right: auto;
   }
 
-  .main-menu {
-    padding: 10%;
-  }
-
   .header-logo {
     max-width: 15%;
     position: fixed;
@@ -52,6 +48,35 @@
 
   .header-logo:hover {
     max-width: 17%;
+  }
+
+  .gallery {
+    max-width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20vw;
+    margin-top: 8vw;
+    padding-top: 30%;
+  }
+
+  .gallery_row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+
+  /* Create four equal columns that sits next to each other */
+  .gallery_column {
+    flex: 32%;
+    max-width: 32%;
+    padding: 0 4px;
+  }
+
+  .gallery_column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
   }
 
   .section-logo {
@@ -66,30 +91,43 @@
     max-width: 640px;
   }
 
-  .footer {
-    padding-top: 0.5vmin;
-    padding-bottom: 0.5vmin;
-    text-align: center;
-  }
-
 
 </style>
 
 <body style="background-color:#E5DCCD;">
-
-  <a href='index.html'> <image class="header-logo" src="media/images/logo_round.png"></image> </a>
-
   <div id="main_div" class="main_div">
+    <a href='index.html'> <image class="header-logo" src="media/images/logo_round.png"></image> </a>
+
+
+      <div id="gallery" class="gallery">
+
+        <div class="gallery_row">
+          <div class="gallery_column">
+            <img src="media/images/adaptak_stul.png">
+            <img src="media/images/adaptak_zebrik.png">
+            <img src="media/images/jura_orc.jpg">
+            <img src="media/images/taboriste.jpg">
+          </div>
+          <div class="gallery_column">
+            <img src="media/images/lanac.png">
+            <img src="media/images/tonda_druid.png">
+            <img src="media/images/louce.png">
+          </div>
+          <div class="gallery_column">
+            <img src="media/images/tonda_pirat.png">
+            <img src="media/images/nocni_2.png">
+            <img src="media/images/kamca_indiani.png">
+          </div>
+        </div>
+    </div>
+
+
 
     <div id="main-menu" class="main-menu">
       <a href='akce_sovrch.html'> <image id="menu_sovrch" class="section-logo" src="media/images/menu_sovrch.png"/> </a>
       <a href='akce_pirati.html'> <image id="menu_pirati" class="section-logo" src="media/images/menu_pirati.png"/> </a>
       <a href='akce_indiani.html'> <image id="menu_indiani" class="section-logo" src="media/images/menu_indiani.png"/> </a>
-      <a href='galerie.html'> <image id="menu_galerie" class="section-logo" src="media/images/menu_galerie.png"/> </a>
       <a href='team_info.html'> <image id="menu_team" class="section-logo" src="media/images/menu_team.png"/> </a>
     </div>
   </div>
-
-  <div class="footer"> Pro spolek <span style="font-family: bold;">Sovrch</span> spatlal léta páně 2023 <span style="font-family: bold;">Jura Brázdil</span> </div>
-
 </body>
