@@ -45,13 +45,16 @@
   }
 
   .header-logo {
-    max-width: 15%;
+    width: 12vmin;
+    height: 12vmin;
     position: fixed;
-    padding: 10px;
+    padding: 2vmin;
+    transition: width 0.2s, height 0.2s, opacity 0.2s;
   }
 
   .header-logo:hover {
-    max-width: 17%;
+    width: 13vmin;
+    height: 13vmin;
   }
 
   .section-logo {
@@ -60,6 +63,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    transition: max-width 0.4s;
   }
 
   .section-logo:hover {
@@ -78,15 +82,17 @@
 <body style="background-color:#E5DCCD;">
 
   <a href='index.html'> <image class="header-logo" src="media/images/logo_round.png"></image> </a>
+  <!-- <a href='index.html'> <div class="header-logo-home"></div> </a> -->
 
   <div id="main_div" class="main_div">
 
     <div id="main-menu" class="main-menu">
       <a href='akce_sovrch.html'> <image id="menu_sovrch" class="section-logo" src="media/images/menu_sovrch.png"/> </a>
+      <a href='akce_sovrch_rodice.html'> <image id="menu_sovrch" class="section-logo" src="media/images/menu_s_rodinou.png"/> </a>
       <a href='akce_pirati.html'> <image id="menu_pirati" class="section-logo" src="media/images/menu_pirati.png"/> </a>
       <a href='akce_indiani.html'> <image id="menu_indiani" class="section-logo" src="media/images/menu_indiani.png"/> </a>
       <a href='galerie.html'> <image id="menu_galerie" class="section-logo" src="media/images/menu_galerie.png"/> </a>
-      <a href='team_info.html'> <image id="menu_team" class="section-logo" src="media/images/menu_team.png"/> </a>
+      <a href='co_jsme_zac.html'> <image id="menu_team" class="section-logo" src="media/images/menu_team.png"/> </a>
     </div>
   </div>
 

@@ -1,0 +1,145 @@
+<style>
+  @font-face {
+    font-family: 'hfx_roman';
+    src: url("media//fonts/HoeflerTxt-Roman.otf") format("opentype");
+  }
+
+  @font-face {
+    font-family: 'hfx_bold';
+    src: url("media//fonts/HoeflerTxt-Bold.otf") format("opentype");
+  }
+
+  @font-face {
+    font-family: 'hfx_black';
+    src: url("media//fonts/HoeflerTxt-Black.otf") format("opentype");
+  }
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+  .main_div {
+    width: 90%;
+    padding-top: 20%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-menu {
+    padding: 10%;
+  }
+
+  .header-logo {
+    width: 12vmin;
+    height: 12vmin;
+    position: fixed;
+    padding: 2vmin;
+    transition: width 0.2s, height 0.2s, opacity 0.2s;
+  }
+
+  .header-logo:hover {
+    width: 13vmin;
+    height: 13vmin;
+  }
+
+  .current-section-logo {
+    max-width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section-logo {
+    padding: 20px;
+    max-width: 600px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: max-width 0.4s;
+  }
+
+  .section-logo:hover {
+    max-width: 640px;
+  }
+
+  .section-text {
+    color: #BFBFBF;
+    background-color:#1E1613;
+    font-family: hfx_book;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+    border-radius: 20px;
+  }
+  .section-text h1 {
+    font-size: 4.4vmin;
+    text-align: center;
+    font-family: hfx_book;
+  }
+  .section-text h3 {
+    font-size: 2.5vmin;
+    text-align: center;
+    font-family: hfx_book;
+  }
+  .section-text h4 {
+    font-size: 2vmin;
+    text-align: center;
+    font-family: hfx_book;
+  }
+  .section-text p {
+    text-indent: 30px;
+    font-size: 2.2vmin;
+  }
+
+  .link {
+    font-family: hfx_book;
+    font-size: 1.3vmin;
+    text-align: center;
+  }
+
+  .footer {
+    padding-top: 0.5vmin;
+    padding-bottom: 0.5vmin;
+    text-align: center;
+  }
+
+  .button {
+    font-family: hfx_book;
+    font-size: 4vmin;
+    text-align: center;
+    text-decoration: none;
+    background-color: #EEEEEE;
+    color: black;
+    padding: 1.5vmin 2vmin;
+    border-top: 0.6vmin solid #CCCCCC;
+    border-right: 0.6vmin solid #333333;
+    border-bottom: 0.6vmin solid #333333;
+    border-left: 0.6vmin solid #CCCCCC;
+    transition: padding 0.25s, border 0.25s;
+  }
+
+  .button:hover {
+    /* max-width: 17%; */
+    color: #171717;
+    background-color: #D6D5D5;
+    border-top: 0.6vmin solid #333333;
+    border-left: 0.6vmin solid #333333;
+    border-right: 0.6vmin solid #CCCCCC;
+    border-bottom: 0.6vmin solid #CCCCCC;
+  }
+
+
+</style>
